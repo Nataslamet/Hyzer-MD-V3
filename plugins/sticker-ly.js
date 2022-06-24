@@ -2,12 +2,12 @@ const fetch = require('node-fetch')
 const { sticker5 } = require('../lib/sticker')
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-    if (!text) throw `Penggunaan:\n${usedPrefix + command} <teks>\n\nContoh:\n${usedPrefix + command} spongebob`
+    if (!text) throw `Penggunaan:\n${usedPrefix + command} <teks>\n\nContoh:\n${usedPrefix + command} meme`
     let res = await fetch(API('xteam', '/sticker/stickerly', { q: text }, 'APIKEY'))
     if (!res.ok) throw eror
     let json = await res.json()
     if (!json.status) throw json
-    let hasil = json.sticker((v, i) => `${i + 1}. ${v}`).join('\n')
+    let hasil = json.sticker.map((v, i) => `${i + 1}. ${v}`).join('\n')
     m.reply(`*${json.title}*
 *Estimasi selesai:* ${json.sticker.length * 1.5} detik
 `.trim())

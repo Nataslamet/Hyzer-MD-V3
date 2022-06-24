@@ -3,7 +3,7 @@ const { sticker5 } = require('../lib/sticker')
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
     if (!text) throw `Penggunaan:\n${usedPrefix + command} <teks>\n\nContoh:\n${usedPrefix + command} spongebob`
-    let res = await fetch(API('xteam', '/Sticker/stickerly', { q: text }, 'apikey'))
+    let res = await fetch(API('xteam', '/sticker/stickerly', { q: text }, 'apikey'))
     if (!res.ok) throw eror
     let json = await res.json()
     if (!json.status) throw json

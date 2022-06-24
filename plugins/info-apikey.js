@@ -14,10 +14,10 @@ let handler = async m => m.reply(`
 ├➥ *LeysKey* = MNQYOVSL
 ├➥ *apixteam* = 7415bc4287ad5ca8
 ├➥ *apiKey* = 7ed90d537ab5edddb6ba6465
-├➥ *LolKey* = Danwfrostkey
+├➥ *LolKey* = eafa46a5dac2cd0cf3f0c2e1
 ├➥ *odckey* = onlygay
 ├➥ *onlydev* = PunyaIkyAds
-├➥ *xteam* = AbilGanss
+├➥ *xteam* = 0564797071ae3801
 ├➥ *BarBarKey* = IDxO1TFYnKADlX4pxcHa
 ├➥ *AbilGanssVhtearKey* = 1BlnApiIkyPake
 ├➥ *xteamkey* = AbilGanss
